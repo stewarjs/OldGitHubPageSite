@@ -13,7 +13,8 @@ header {
 }
 
 header .icon {
-        width: 50px;
+    fill: #BCE6E8;
+    width: 50px;
     height: 50px;
     float: left;
     margin: 10px 10px 10px 20px;
@@ -87,6 +88,15 @@ header nav {
     font-size: .8em;
     margin: 26px 20px 0 0;
     transition: .3s ease all;
+}
+
+#menu {
+    position: absolute;
+    left: -9999px;
+}
+
+#menuControl, #menu, .box .icon {
+    display: none;
 }
 
 #menuBox {
@@ -267,7 +277,56 @@ footer ul li {
     }
     
     header nav {
-        margin: 21px 20px 0 0;
+        margin: 13px 20px 0 0;
+    }
+    
+    #menu {
+        display: block;
+    }
+    
+    #menuControl {
+        display: block;
+        width: 40px;
+        height: 40px;
+        overflow: hidden;
+    }
+    
+    
+    #menuControl svg {
+        width: 35px;
+        height: 35px;
+    }
+    
+    .box {
+        position: fixed;
+        top: 0;
+        padding: 10px 0 0 20px;
+        left: -200px;
+        background-color: #3d3d3d;
+        width: 150px;
+        height: 100%;
+        transition: .3s ease all;
+        z-index: 1;
+    }
+    
+    .box .icon {
+        float: none;
+        left: 0;
+        right: 0;
+        bottom: 50px;
+        position: absolute;
+        margin: auto;
+        fill: #909090;
+        display: block;
+    }
+    
+    #menuBox li {
+        float: none;
+        margin: 15px 0;
+    }
+    
+    #menu:checked + .box {
+        left: 0;
     }
 }
 
