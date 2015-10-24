@@ -344,6 +344,11 @@ footer a:link, footer a:visited {
 @media (max-width: 400px) {
     header {
         height: 56px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1;
     }
     
     header .icon {
@@ -354,6 +359,10 @@ footer a:link, footer a:visited {
     
     header nav {
         width: 25px;
+    }
+    
+    main {
+        margin-top: 56px;
     }
     
     #menu {
