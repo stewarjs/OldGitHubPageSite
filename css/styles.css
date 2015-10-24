@@ -1,4 +1,16 @@
+.no-svg h1 {
+    margin: 0 0 0 20px;
+    line-height: 2.8em;
+}
 
+.no-svg nav {
+    margin: 0 20px 0 0;
+    line-height: 3.5em;
+}
+
+.no-svg .banner:after {
+    display: none;
+}
 
 body {
     margin: 0;
