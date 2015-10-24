@@ -257,6 +257,17 @@ footer a:link, footer a:visited {
     .banner:after {
         opacity: 0;
     }
+    
+}
+
+@media (max-width: 1008px) {
+    
+    .container {
+        overflow: hidden;
+        max-width: 670px;
+        margin: 0 auto;
+    }
+    
 }
 
 @media (max-width: 770px) {
@@ -281,6 +292,18 @@ footer a:link, footer a:visited {
         z-index: -1;
     }
       
+}
+
+@media (max-width: 675px) {
+    .container {
+        max-width: 100%;
+    }
+    
+    .container figure {
+        width: 40%;
+        margin: 0 2% 5%;
+    }
+
 }
 
 @media (max-width: 640px) {
@@ -397,5 +420,27 @@ footer a:link, footer a:visited {
     #menu:checked + #menuControl > svg > #bottom {
         transform: rotate(-45deg) translate(-20px, -1px);
     }
+    
+    .container figure {
+        margin: 0 1% 5%;
+    }
+    
+    .container figcaption {
+        padding: 0;
+    }
+    
+    .container figcaption p {
+        display: none;
+    }
+    
+    .container figcaption h4 {
+        font-size: .8em;
+    }
 }
 
+@media (max-width: 295px) {
+    .container figure {
+        width: auto;
+        margin: 0 5% 5%;
+    }
+}
