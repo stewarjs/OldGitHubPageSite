@@ -378,6 +378,10 @@ footer a:link, footer a:visited {
         width: 25px;
     }
     
+    .hasBanner {
+        margin-top: 56px;
+    }
+    
     main {
         margin-top: 76px;
     }
