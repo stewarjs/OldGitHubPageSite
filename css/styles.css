@@ -183,7 +183,7 @@ figcaption p {
 }
 
 a.fillFrame {
-    background: transparent url('img/transparent.png') repeat 0 0;  /* IE fix */
+    background: transparent url('../img/transparent.png') repeat 0 0;  /* IE fix */
     text-indent: -9999px;
     position: absolute;
     top: 0;
