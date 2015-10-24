@@ -19,6 +19,14 @@ body {
     background-color: #f5f5f5;
 }
 
+a:link, a:visited {
+    color: #0178A2;
+}
+
+a:hover, a:focus {
+    color: #08965C;
+}
+
 header {
     height: 70px;
     background-color: #456F7E;
@@ -194,6 +202,11 @@ figcaption {
     padding: 0 0 20px 0;
     margin: 20px 0 0;
     line-height: 1.2em;
+}
+
+figcaption h3, h4 {
+    font-size: 1em;
+    margin-left: 0;
 }
 
 figcaption h4 {
