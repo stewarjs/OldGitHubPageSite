@@ -213,7 +213,10 @@ figcaption h4 {
     font-weight: normal;
     font-size: 1.09em;
     margin: 0 0 8px 5px;
-    color: #505050;;
+    color: #505050;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 figcaption p {
