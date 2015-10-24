@@ -173,6 +173,13 @@ main.example {
     overflow: visible;
 }
 
+code {
+    display: inline;
+    background-color: #E4E4E4;
+    padding: 5px;
+    border-radius: 5px;
+}
+
 .shrink {
     max-width: 1000px;
     margin: 0 auto;
