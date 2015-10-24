@@ -207,7 +207,7 @@ footer{
 
 footer ul {
     padding: 0;
-    margin: 30px 50px;
+    margin: 30px auto;
     list-style: none;
     text-align: center;
 }
@@ -300,10 +300,10 @@ footer ul li {
     .box {
         position: fixed;
         top: 0;
-        padding: 10px 0 0 20px;
+        padding: 10px 0 0 0;
         left: -200px;
         background-color: #3d3d3d;
-        width: 150px;
+        width: 200px;
         height: 100%;
         transition: .3s ease all;
         z-index: 1;
@@ -322,11 +322,40 @@ footer ul li {
     
     #menuBox li {
         float: none;
-        margin: 15px 0;
+        margin: 8px 0;
     }
     
-    #menu:checked + .box {
+    #menuBox li a {
+        display: block;
+        padding: 13px 0 13px 20px;
+    }
+    
+    #menuBox li a:hover, #menuBox li a:focus {
+        background-color: #4A4949;
+        border-left: 3px solid #BCE6E8;
+        padding-left: 17px;
+    }
+    
+    #menu:checked ~ .box {
         left: 0;
+        box-shadow: 0px 0px 6px 3px rgba(0, 0, 0, 0.58);
+    }
+    
+    #menu + #menuControl > svg > #middle, #menu + #menuControl > svg > #top, #menu + #menuControl > svg > #bottom {
+        transform: translate(0,0) rotate(0);
+        transition: .3s ease all;
+    }
+    
+    #menu:checked + #menuControl > svg > #middle {
+        transform: translateX(51px);
+    }
+    
+    #menu:checked + #menuControl > svg > #top {
+        transform: rotate(45deg) translate(7px, -9px);
+    }
+    
+    #menu:checked + #menuControl > svg > #bottom {
+        transform: rotate(-45deg) translate(-20px, -1px);
     }
 }
 
