@@ -362,7 +362,11 @@ footer a:link, footer a:visited {
     }
     
     main {
-        margin-top: 56px;
+        margin-top: 76px;
+    }
+    
+    h2, h3 {
+        margin-left: 10px;
     }
     
     #menu {
