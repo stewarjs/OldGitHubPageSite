@@ -127,6 +127,17 @@ header nav {
 #menuBox li a:link, #menuBox li a:visited {
     color: #ffffff;
     text-decoration: none;
+    transition: .3s ease all;
+}
+
+footer a:link, footer a:visited {
+    color: #cccccc;
+    text-decoration: none;
+    transition: .3s ease all;
+}
+
+#menuBox li a:hover, #menuBox li a:focus, footer li a:hover, footer li a:focus {
+    color: #BCE6E8;
 }
 
 main {
@@ -198,14 +209,18 @@ a.fillFrame:hover, a.fillFrame:focus {
 }
 
 a.button {
-    background-color: #0076a3;
-    color: #ffffff;
+    max-width: 100px;
+    width: 20%;
+    display: inline-block;
+    margin: 0 10px 10px 0;
     text-decoration: none;
-    padding: 10px;
     border-radius: 5px;
-    font-size: .8em;
-    float: right;
-        margin: 0 0 10px;
+    overflow: hidden;
+    transition: .3s ease all;
+}
+
+a.button:hover, a.button:focus {
+    opacity: .75;
 }
 
 footer{
@@ -228,8 +243,14 @@ footer ul {
 }
 
 footer ul li {
-        margin: 0 15px;
+    margin: 0 15px;
     display: inline-block;
+}
+
+footer a:link, footer a:visited {
+    color: #cccccc;
+    text-decoration: none;
+    transition: .3s ease all;
 }
 
 @media (max-width: 1080px) {
