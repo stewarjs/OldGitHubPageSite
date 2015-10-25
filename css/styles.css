@@ -273,6 +273,21 @@ a.button:hover, a.button:focus {
     opacity: .75;
 }
 
+a.text.button {
+    background-color: #0076a3;
+    color: #ffffff;
+    padding: 10px;
+    height: 21px;
+    text-align: center;
+    line-height: 22px;
+    border-radius: 5px;
+    margin: 0 auto;
+    transition: ease-in-out .3s;
+    width: auto;
+    display: inline;
+    font-size: .8em;
+}
+
 footer{
     display: block;
     background-color: #25373E;

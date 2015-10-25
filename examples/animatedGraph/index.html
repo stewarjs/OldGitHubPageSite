@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>CFO Page Layout | Good Design Solves Problems</title>
+    <title>Animated Graph | Good Design Solves Problems</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#456F7E">
@@ -42,14 +42,15 @@ Show Menu
 </nav>
 </header>
 <main id="main" class="example">
-<h2>CFO Page Layout</h2>
+<h2>Animated Graph</h2>
 <figure class="example">
-    <img src="OCFO_medium.jpg" alt="" />
+<img src="linegraph.svg" alt="" />
     <figcaption>
         <h3>Full size views</h3>
-        <a href="OCFO_large.jpg" class="button" target="_blank"><img src="OCFO_small.jpg" alt="View Full Resolution" /></a>
+        <a href="linegraph.svg" class="text button" target="_blank">View SVG File</a>
         <h3>About</h3>
-        <p>The Web site for the Chief Financial Officer is due for an update, and I was asked to design the layout. This design went through a few iterations (as most do) but I'm pleased with the end result.</p>
+        <p>This graph is part of the layout I did for the <a href="../OCFO/index.html">CFO Page design</a>. That layout originally had the 'Plans and Reports' section extending across the page instead of in a smaller compartment (as seen in the final layout). In those early design iterations, the graph would load once the user scrolled to that section, and then would animate to it's final position.</p>
+        <p>Since SVG animations (SMIL) do not work in all browsers (<a href="http://caniuse.com/#feat=svg-smil" target="_blank">see browser compatibility for SVG animations</a>), the first position for the animation is actually the perceived, last position. So technically I'm animating the paths down and to zero opacity <em>first</em>, and then animating the paths back up to the start position. This allows browsers without the adequate support to see the graph as well. Users with those browsers just won't see the animation.</p>
     </figcaption>
 </figure>
 
