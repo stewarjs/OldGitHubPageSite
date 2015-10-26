@@ -12,6 +12,10 @@
     display: none;
 }
 
+html, body, main {
+    height: 100%;
+}
+
 body {
     margin: 0;
     font-family: Arial, sans-serif;
