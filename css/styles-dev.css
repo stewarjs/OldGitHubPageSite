@@ -349,6 +349,10 @@ footer a:link, footer a:visited {
         width: 45px;
         height: 45px;
     }
+    
+    html, body, main {
+        height: auto;
+    }
 }
 
 @media (max-width: 675px) {
