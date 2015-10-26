@@ -51,6 +51,7 @@ Show Menu
         <h3>About</h3>
         <p>This graph is part of the layout I did for the <a href="../OCFO/index.html">CFO Page design</a>. That layout originally had the 'Plans and Reports' section extending across the page instead of in a smaller compartment (as seen in the final layout). In those early design iterations, the graph would load once the user scrolled to that section, and then would animate to it's final position.</p>
         <p>Since SVG animations (SMIL) do not work in all browsers (<a href="http://caniuse.com/#feat=svg-smil" target="_blank">see browser compatibility for SVG animations</a>), the first position for the animation is actually the perceived, last position. So technically I'm animating the paths down and to zero opacity <em>first</em>, and then animating the paths back up to the start position. This allows browsers without the adequate support to see the graph as well. Users with those browsers just won't see the animation.</p>
+        <p>Note: There is currently (as of this posting) a bug in Webkit browsers that do not allow out of range cubic bezier curves (which gives the bounce effect) so those browsers will only see the graph fade in, not the motion. The important thing is all browsers that support SVG <em>will</em> see something.</p>
     </figcaption>
 </figure>
 
