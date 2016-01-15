@@ -172,6 +172,8 @@ display: block;
 overflow: hidden;
 }
 
+main.hasBanner {overflow:visible;}
+
 main.example {
     padding: 0 20px;
     overflow: visible;
